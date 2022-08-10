@@ -73,6 +73,8 @@
   [#2781](https://github.com/Kong/kubernetes-ingress-controller/pull/2781)
 - Added all the Gateway-related conformance tests.
   [#2777](https://github.com/Kong/kubernetes-ingress-controller/issues/2777)
+- Added all the HTTPRoute-related conformance tests.
+  [#2776](https://github.com/Kong/kubernetes-ingress-controller/issues/2776)
 
 #### Fixed
 
@@ -92,7 +94,10 @@
   [#2781](https://github.com/Kong/kubernetes-ingress-controller/pull/2781)
 - Treat status conditions in `Gateway` and `GatewayClass` as snapshots, replace
   existing conditions with same type on setting conditions.
-  [#2791](https://github.com/Kong/kubernetes-ingress-controller/pull/2791) 
+  [#2791](https://github.com/Kong/kubernetes-ingress-controller/pull/2791)
+- StripPath for `HTTPRoute`s is now disabled by default to be conformant with the
+  Gateway API requirements.
+  #[#2737](https://github.com/Kong/kubernetes-ingress-controller/pull/2737)
 
 #### Under the hood
 
